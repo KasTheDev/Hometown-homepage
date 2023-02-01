@@ -1,17 +1,19 @@
-/**
-Palette: https://scrimba.com/links/hometown-palette
-RED: #E63946
-LIGHT: #F1FAEE
-AQUA: #A8DADC
-LIGHT BLUE: #457B9D
-DARK BLUE: #1D3557
-
-*/
-
 body {
     margin: 0;
     text-align: center;
 }
+
+#hero {
+    display: block;
+    background-image: url("images/bridge1.jpg");
+    background-size: cover;
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 720px;
+    height: 300px;
+    
+}
+
 #city-header {
     height: 22px;
     font-size: 25px;
@@ -34,17 +36,6 @@ body {
     text-shadow: 0 0 5px black;
 }
 
-#hero {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    display: block;
-    background-image: url("images/bridge1.jpg");
-    background-size: cover;
-    margin: 0 auto;
-    padding-top: 20px;
-    width: 720px;
-    height: 300px;
-    
-}
 
 #activities {
     background-color: #c9af8d;
@@ -52,28 +43,45 @@ body {
     margin: 0 auto;
 }
 
-#activities-head{
-    padding-top: 20px;
+#hero, h3, h4, #guide-head {
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h3 {
+    padding-top: 20px;
     font-size: 20px;
     text-decoration: underline;
     color: #211a10;
     text-shadow: 0 0 5px white;
 }
 
+h4{
+    font-size: 16px;
+}
+
 #act-column{
     display: flex;
 }
 
-#act-column-one, #act-column-two, #act-column-three{
+.act-img{
+    border: solid 2px #33361e;
+}
+
+#act-column-one, #act-column-two, #act-column-three {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    
+    text-align: center;
+    padding: 0 3px;
+    margin: 0 4px;
 }
+
 p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
     margin: 25px 25px;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 
@@ -100,7 +108,6 @@ p{
 }
 
 #guide-head{
-    font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration: underline;
 }
 
